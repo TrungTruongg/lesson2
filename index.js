@@ -30,6 +30,7 @@ import {
   uniqueValues,
 } from "./utils.js";
 
+
 sumArray([1, 2, 3, 4]);
 
 countOccurrences([1, 2, 2, 3, 2], 2);
@@ -56,35 +57,54 @@ sortProductsByPrice(products);
 findMostExpensiveProduct(products);
 
 
-console.log("Bai 9", groupByType());
+groupByType([
+  { type: "fruit", name: "apple" },
+  { type: "vegetable", name: "carrot" },
+  { type: "fruit", name: "banana" },
+]);
 
-isSubset();
+isSubset([1, 2, 3, 4], [2, 4]);
 
-findMaxKey();
+findMaxKey({ a: 10, b: 20, c: 15 });
 
-mergeObjectsSumValues();
+mergeObjectsSumValues({ a: 10, b: 20 }, { b: 30, c: 40 });
 
-countElements();
+countElements(["a", "b", "a", "c", "b", "a"]);
 
-cleanObject();
+cleanObject({ a: 1, b: null, c: undefined, d: 4 });
 
-hasDuplicate();
+hasDuplicate([1, 2, 3, 4, 2]);
 
-sumByGroup('type')
+sumByGroup([
+  { type: "fruit", price: 10 },
+  { type: "vegetable", price: 20 },
+  { type: "fruit", price: 30 },
+], 'type')
 
-uniqueValues();
+uniqueValues([2, 2, 3], [3, 4, 5]);
 
-isPermutation();
+isPermutation([5, 2, 2], [1, 2, 2]);
 
-findLongestString();
+findLongestString(["abc", "abcd", "a"]);
 
-intersection();
-filterByMinValue(12);
-findLongestValue();
-groupByFirstLetter();
-getAdults();
-convertToArray();
-sortStringsByLength();
-sumByKey("price");
-countWords();
-findMinKey();
+intersection([1, 2, 3], [2, 3, 4]);
+filterByMinValue([5, 10, 15, 20], 12);
+findLongestValue({ a: "cat", b: "elephant", c: "dog" });
+groupByFirstLetter(["apple", "banana", "avocado", "blueberry"]);
+getAdults([
+  { name: "Alice", age: 17 },
+  { name: "Bob", age: 20 },
+  { name: "Charlie", age: 16 },
+  { name: "David", age: 22 },
+]);
+convertToArray({ a: 1, b: 2, c: 3 });
+sortStringsByLength(["a", "ccc", "bb"]);
+sumByKey([
+  { type: "fruit", price: 10 },
+  { type: "vegetable", price: 20 },
+  { type: "fruit", price: 30 },
+], 'price');
+countWords("Hello world! Welcome to JavaScript");
+findMinKey({ a: 100, b: 20, c: 50 });
+
+
